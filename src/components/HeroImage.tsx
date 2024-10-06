@@ -1,33 +1,62 @@
 export default function HeroImage() {
 	return (
-		<div className="bg-[url('./images/heroimg.jpg')] bg-cover bg-center bg-no-repeat h-[60vh] w-full relative flex items-center">
-			<div className="container mx-auto flex lg:flex-row justify-between items-center px-10 lg:px-20 py-10 lg:py-0 w-full">
-				<div className="text-center lg:text-left space-y-8">
-					<h2 className="text-[#FDF1DE] text-5xl xl:text-8xl font-medium">
+		<div className="bg-[url('./images/heroimg.jpg')] bg-cover bg-center bg-no-repeat h-[50vh] w-full landscape:h-[90vh] md:landscape:h-[70vh] ">
+			<div className="container px-3 py-5 w-full relative h-full mx-auto">
+				<div className="">
+					<h2 className="text-[#FDF1DE] text-5xl md:text-7xl xl:text-8xl font-medium text-left">
 						Celebrating <br /> 40 Years
 					</h2>
-					<div className="flex flex-col space-y-8">
-						<a href="" className="bg-[#B42E02] py-4 px-8 w-max uppercase font-bold text-xl rounded-full">
+
+					<div className="flex flex-col space-y-8 absolute bottom-0 mb-14">
+						<a
+							href=""
+							className="bg-[#B42E02] py-2 px-6 lg:py-4 lg:px-12 w-max uppercase font-bold text-xl rounded-full text-[#FDF1DE]">
 							All attraction
 						</a>
 						<a
 							href=""
-							className="bg-[#FDF1DE] py-4 px-8 w-max border-[#FDF1DE] border-2 hover:bg-[#CF9A29] uppercase font-bold text-xl rounded-full duration-200">
+							className="bg-[#FDF1DE] text-[#CF9A29] py-2 px-6 lg:py-4 lg:px-12 w-max border-[#FDF1DE] border-2 hover:bg-[#CF9A29] uppercase font-bold text-xl rounded-full duration-200 hover:text-[#FDF1DE]">
 							View Events
 						</a>
 					</div>
 				</div>
 
-				<div className="absolute right-10 lg:right-20 bottom-32 flex">
+				<div className="">
 					<a
 						href=""
-						className="bg-[#B42E02] py-4 px-8 w-max border-none hover:bg-[#FDF1DE] uppercase font-bold text-xl rounded-full duration-200 hidden sm:block">
+						className="bg-[#B42E02] py-3 px-6 w-max  hover:bg-[#FDF1DE] uppercase font-bold text-xl rounded-full duration-200 hidden lg:flex absolute bottom-0 right-0 m-6 justify-between text-[#FDF1DE] hover:text-[#B42E02]  group lg:py-4 lg:pl-8 lg:px-12 border-[#FDF1DE] border-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="28"
+							height="28"
+							viewBox="0 0 51 44"
+							className="mr-4  fill-[#FDF1DE] group-hover:fill-[#B42E02]">
+							<g id="Group">
+								<g id="Group_2">
+									<path
+										id="Vector"
+										d="M43.3036 1.30324C42.7359 0.736812 41.8023 0.736812 41.2346 1.30324C40.6669 1.86966 40.6669 2.80111 41.2346 3.36754C45.4104 7.52131 47.7064 13.0597 47.7064 18.9379C47.7064 19.7435 48.3625 20.398 49.1699 20.398C49.9773 20.398 50.6333 19.7435 50.6333 18.9379C50.6333 12.2667 48.0344 6.01085 43.3036 1.29065V1.30324Z"></path>
+									<path
+										id="Vector_2"
+										d="M10.011 1.30324C9.44325 0.736812 8.5097 0.736812 7.94199 1.30324C3.22374 6.01085 0.612305 12.2793 0.612305 18.9505C0.612305 19.7561 1.26832 20.4106 2.07572 20.4106C2.88312 20.4106 3.53913 19.7561 3.53913 18.9505C3.53913 13.0723 5.83518 7.5339 10.011 3.38013C10.5787 2.8137 10.5787 1.88225 10.011 1.31582V1.30324Z"></path>
+								</g>
+								<path
+									id="Vector_3"
+									d="M36.7939 5.7339C36.2262 6.30032 36.2262 7.23178 36.7939 7.7982C39.7838 10.7814 41.4239 14.7337 41.4239 18.9505C41.4239 19.756 42.0799 20.4106 42.8873 20.4106C43.6947 20.4106 44.3507 19.756 44.3507 18.9505C44.3507 13.9533 42.4079 9.2709 38.8629 5.7339C38.2952 5.16748 37.3616 5.16748 36.7939 5.7339Z"></path>
+								<path
+									id="Vector_4"
+									d="M14.4515 5.7339C13.8838 5.16748 12.9503 5.16748 12.3826 5.7339C8.8502 9.25832 6.89478 13.9533 6.89478 18.9505C6.89478 19.756 7.55079 20.4106 8.35819 20.4106C9.16559 20.4106 9.8216 19.756 9.8216 18.9505C9.8216 14.7463 11.4616 10.7814 14.4515 7.7982C15.0193 7.23178 15.0193 6.30032 14.4515 5.7339Z"></path>
+								<path
+									id="Vector_5"
+									d="M38.0681 29.5616V22.0722C38.0681 19.3408 37.1977 16.7478 35.545 14.5828C34.1699 12.7702 32.2902 11.3479 30.1834 10.5171C29.8932 8.26403 27.9504 6.5144 25.6165 6.5144C23.2826 6.5144 21.3398 8.26403 21.0496 10.5171C18.9428 11.3479 17.0631 12.7702 15.688 14.5828C14.0353 16.7478 13.1649 19.3408 13.1649 22.0722V29.5616L10.175 35.5153C9.94788 35.9685 9.97311 36.5097 10.238 36.9377C10.503 37.3656 10.9824 37.63 11.487 37.63H18.0093C18.6905 41.1921 21.8444 43.8984 25.6165 43.8984C29.3886 43.8984 32.5299 41.1921 33.2237 37.63H39.746C40.2507 37.63 40.73 37.3656 40.995 36.9377C41.2599 36.5097 41.2851 35.9685 41.0581 35.5153L38.0681 29.5616ZM25.6165 40.9782C23.4718 40.9782 21.6552 39.5684 21.037 37.6425H30.2086C29.5904 39.581 27.7612 40.9782 25.6291 40.9782H25.6165ZM31.8991 34.7097H13.8713L15.9529 30.556C16.0538 30.3546 16.1043 30.128 16.1043 29.9014V22.0722C16.1043 17.9058 18.905 14.1548 22.9041 12.9716C23.5223 12.7828 23.9512 12.2164 23.9512 11.5745V11.1213C23.9512 10.2025 24.7082 9.44722 25.6291 9.44722C26.5501 9.44722 27.307 10.2025 27.307 11.1213V11.5745C27.307 12.2164 27.7359 12.7954 28.3541 12.9716C32.3533 14.1548 35.1539 17.9058 35.1539 22.0722V29.9014C35.1539 30.128 35.2044 30.3546 35.3053 30.556L37.3869 34.7097H31.9117H31.8991Z"></path>
+							</g>
+						</svg>
 						Apple alert
 					</a>
 					<a
 						href=""
-						className="bg-[#B42E02] w-14 h-14 flex items-center justify-center rounded-full hover:bg-[#FDF1DE] duration-200 sm:hidden">
-						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 51 44" fill="none">
+						className="bg-[#732200] w-14 h-14 flex items-center justify-center rounded-full lg:hidden absolute bottom-0 right-0 m-6 ">
+						<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 51 44">
 							<g id="Group">
 								<g id="Group_2">
 									<path
