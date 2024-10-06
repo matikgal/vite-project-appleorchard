@@ -60,7 +60,7 @@ export default function NavBar() {
 
 				{/* pc navbar */}
 				<div className="hidden container xl:flex justify-around items-center text-[#FDF1DE] xl:py-3 mx-auto uppercase text-lg">
-					<a href="" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">
+					<a href="/OurOrchard" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">
 						orchard
 					</a>
 					<a href="" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">
@@ -69,7 +69,7 @@ export default function NavBar() {
 					<a href="" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">
 						attraction
 					</a>
-					<a href="">
+					<a href="/Home">
 						<img src="./images/jonamac-logo.svg" alt="" className="pb-4" />
 					</a>
 					<a href="" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">

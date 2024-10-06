@@ -1,13 +1,16 @@
-import NavBar from './components/NavBar'
-import HeroImage from './components/HeroImage'
-import OurOrchardHeroImg from './components/ourOrchardHeroImg'
-
+import HomePage from './pages/HomePage'
+import OurOrchard from './pages/OurOrchard'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
 	return (
 		<>
-			<NavBar />
-			<HeroImage />
-			<OurOrchardHeroImg />
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<HomePage />} />
+					<Route path="/Home" element={<HomePage />} />
+					<Route path="/OurOrchard" element={<OurOrchard />} />
+				</Routes>
+			</BrowserRouter>
 		</>
 	)
 }
