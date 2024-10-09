@@ -1,6 +1,6 @@
 export default function HeroImage() {
 	return (
-		<div className="bg-[url('./images/heroimg.jpg')] bg-cover bg-center bg-no-repeat h-[50vh] w-full landscape:h-[90vh] md:landscape:h-[70vh] ">
+		<div className="bg-[url('./images/heroimg.jpg')] bg-cover bg-center bg-no-repeat h-[50vh] w-full landscape:h-[90vh] md:landscape:h-[70vh] shadow-[inset_20vh_-90px_350px_40px_#46464699]">
 			<div className="container px-3 py-5 w-full relative h-full mx-auto">
 				<div className="">
 					<h2 className="text-[#FDF1DE] text-5xl md:text-7xl xl:text-8xl font-medium text-left">

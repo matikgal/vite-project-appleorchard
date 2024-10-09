@@ -57,77 +57,224 @@ export default function HomePageSection2() {
 							slidesPerView: 2,
 						},
 						1024: {
-							slidesPerView: activeTab === 'weekdays' ? 3 : 5,
+							slidesPerView: activeTab === 'weekdays' ? 3 : 4,
 						},
 						1280: {
-							slidesPerView: activeTab === 'weekdays' ? 3 : 5,
+							slidesPerView: activeTab === 'weekdays' ? 4 : 5,
 						},
 					}}
 					className="mySwiper my-auto">
 					{activeTab === 'weekdays' ? (
 						<>
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider1.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">bubble barn</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider1.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
 
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider2.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">apple picking</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider2.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
-
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider3.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">campfire sites</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider3.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
-
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider2.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">campfire sites</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider4.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
 						</>
 					) : (
 						<>
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider1.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">bubble barn</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider1.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
-
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider2.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">apple picking</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider2.jpg')] bg-cover bg-center mx-auto rounded-2xl  border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
-
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider3.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">campfire sites</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider3.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30 w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
-
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider4.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">corn maze</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider4.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
-
 							<SwiperSlide className="w-[200px] my-auto">
-								<div className="flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider5.jpg')] bg-cover mx-auto rounded-2xl border-2 border-[#CF9A29]">
-									<div className="absolute inset-0 bg-black opacity-30 rounded-2xl w-9/12 mx-auto"></div>
-									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10">trike track</p>
+								<div className="relative flex justify-center items-center h-[270px] w-9/12 bg-[url('images/slider5.jpg')] bg-cover bg-center mx-auto rounded-2xl border-2 border-[#CF9A29] group  overflow-hidden">
+									<div className="absolute inset-0 bg-black opacity-30  w-full mx-auto group-hover:opacity-0 transition-opacity duration-300"></div>
+									<p className="absolute uppercase text-[#FDF1DE] text-2xl z-10 group-hover:opacity-0 transition-opacity duration-300">
+										bubble barn
+									</p>
+
+									<div className="absolute inset-0 bg-[#FDF1DE]   flex flex-col justify-center   p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 gap-5 text-[#16472D]">
+										<div>
+											<h3 className="text-xl font-bold">Weekdays</h3>
+											<p className="text-sm">Mon - Fri</p>
+											<p className="text-sm">8 am - 5:30 pm</p>
+											<p className="text-sm ">Free Mon - Fri</p>
+										</div>
+										<div>
+											<h3 className="text-xl font-bold">Weekends</h3>
+											<p className="text-sm">Sat - Sun & Holiday Mondays</p>
+											<p className="text-sm">9 am - 5:30 pm</p>
+											<p className="text-sm ">Included with General Admission</p>
+										</div>
+									</div>
 								</div>
 							</SwiperSlide>
 						</>
