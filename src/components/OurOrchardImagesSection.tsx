@@ -34,7 +34,7 @@ const items: Item[] = [
 
 export default function OurOrchardImagesSection() {
 	return (
-		<div className="flex flex-col gap-4 bg-[#FDF1DE] items-center px-8">
+		<div className="flex flex-col gap-4 bg-[#FDF1DE] items-center px-8 relative">
 			{items.map((item, index) => (
 				<div
 					key={index}
@@ -56,6 +56,7 @@ export default function OurOrchardImagesSection() {
 					</div>
 				</div>
 			))}
+			<div className="absolute bg-[#CF9A29] h-[80%] w-2 top-64"></div>
 		</div>
 	)
 }

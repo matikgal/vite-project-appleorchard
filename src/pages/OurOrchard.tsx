@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar'
 import OurOrchardHeroParagraph from '../components/ourOrchardParagraph'
 import OurOrchardSectionTitle from '../components/OurOrchardSectionTitle'
 import OurOrchardImagesSection from '../components/OurOrchardImagesSection'
+import OurOrchardGirlsImage from '../components/OurOrchardGirlsImage'
 export default function OurOrchard() {
 	return (
 		<>
@@ -11,6 +12,7 @@ export default function OurOrchard() {
 			<OurOrchardHeroParagraph />
 			<OurOrchardSectionTitle />
 			<OurOrchardImagesSection />
+			<OurOrchardGirlsImage />
 		</>
 	)
 }
