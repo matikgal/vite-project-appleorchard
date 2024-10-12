@@ -59,10 +59,47 @@ export default function NavBar() {
 				</svg>
 
 				{/* pc navbar */}
-				<div className="hidden container xl:flex justify-around items-center text-[#FDF1DE] xl:py-3 mx-auto uppercase text-lg">
-					<a href="/OurOrchard" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">
+				<div className="hidden container xl:flex justify-around items-center text-[#FDF1DE]  mx-auto uppercase text-lg h-28">
+					<a
+						href="/OurOrchard"
+						className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2 group h-28 text-center self-center pt-10">
 						orchard
+						<div className="hidden bg-[#FDF1DE] !max-w-full w-full h-[32rem] top-[110px] left-0 absolute  !mx-0  group-hover:flex flex-row  bg-no-repeat bg-cover bg-center z-10  p-8  justify-center">
+							<div className="!container flex flex-row ">
+								<div className=" text-start flex flex-col items-start">
+									<img
+										src="images/navbar1.jpg"
+										alt=""
+										className="bg-no-repeat bg-cover bg-center h-3/4 rounded-[12%] w-[85%] mb-10"
+									/>
+									<a href="/OurOrchard" className="text-red-700 text-3xl font-bold">
+										Our Orchard
+									</a>
+								</div>
+								<div className=" text-start">
+									<img
+										src="images/navbar2.jpg"
+										alt=""
+										className="bg-no-repeat bg-cover bg-center h-3/4 rounded-[12%] mb-10 w-[85%] "
+									/>
+									<a href="/OurOrchard" className="text-red-700 text-3xl font-bold">
+										Apples Varietes
+									</a>
+								</div>
+								<div className=" text-start">
+									<img
+										src="images/navbar3.jpg"
+										alt=""
+										className="bg-no-repeat bg-cover bg-center h-3/4 rounded-[12%] mb-10 w-[85%] "
+									/>
+									<a href="/OurOrchard" className="text-red-700 text-3xl font-bold">
+										Apple picking
+									</a>
+								</div>
+							</div>
+						</div>
 					</a>
+
 					<a href="" className="underline-offset-8 hover:underline decoration-[#CF9A29] decoration-2">
 						cider house
 					</a>
