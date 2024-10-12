@@ -34,7 +34,9 @@ export default function HomePageSection2() {
 						</h3>
 					</div>
 				</div>
-				<a href="" className="bg-[#362400] text-[#FDF1DE] w-[200px] px-6 py-3 rounded-full uppercase font-medium">
+				<a
+					href=""
+					className="bg-[#362400] text-[#FDF1DE] w-[200px] px-6 py-3 rounded-full uppercase font-medium border-2 border-[#FDF1DE] hover:border-[#362400] hover:bg-[#FDF1DE] duration-300 hover:text-[#362400]">
 					all attraction
 				</a>
 				<a href="" className="bg-[#CF9A29] text-[#FDF1DE] w-full py-4 rounded-full uppercase font-medium md:hidden">
