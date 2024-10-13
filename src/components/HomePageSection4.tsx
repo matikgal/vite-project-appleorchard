@@ -62,7 +62,7 @@ export default function HomePageSection4() {
 					<h2 className="text-center md:text-left py-5 lg:py-0 lg:pr-2 text-4xl font-bold text-[#FDF1DE] transform md:-rotate-90 whitespace-nowrap md:w-[150px] flex justify-center">
 						currently picking
 					</h2>
-					<div className="bg-[#FDF1DE] w-full md:w-[80%] h-[80vh] lg:h-[full] p-2 flex-1 pt-10">
+					<div className="bg-[#FDF1DE] w-full md:w-[80%] h-[8080%] lg:h-[full] p-2 flex-1 pt-10">
 						<Swiper
 							onSwiper={swiper => (swiperRef.current = swiper)}
 							spaceBetween={20}
@@ -82,24 +82,45 @@ export default function HomePageSection4() {
 								},
 							}}
 							centeredSlides={false}
-							className="w-full h-full flex justify-center items-center">
+							className="w-full h-full flex justify-center items-center pb-10">
 							{apples.map((apple, index) => (
-								<SwiperSlide key={index} className="w-full h-full flex justify-center items-center">
-									<div className="flex flex-col items-center border-[1px] border-[#CF9A29] rounded-3xl w-full  sm:h-[450px] h-[450px] lg:min-h-[400px] lg:h-max text-center p-5">
+								<SwiperSlide key={index} className="w-full h-full flex justify-center items-center relative">
+									<div className="flex flex-col items-center border-[1px] border-[#CF9A29] rounded-3xl w-full sm:h-[450px] h-[450px] lg:min-h-[400px] lg:h-max text-center p-5 transition-all duration-300 transform hover:opacity-0">
 										<img src={apple.image} alt={apple.name} className="" />
 										<h2 className="uppercase text-4xl font-bold md:text-2xl">{apple.name}</h2>
 										<h3 className="uppercase font-bold text-[#CF9A29] pt-5 md:text-[12px]">{apple.description}</h3>
 										<p className="text-sm">{apple.ripening}</p>
 									</div>
+
+									<div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center p-14 opacity-0 transition-opacity duration-300 hover:opacity-100 bg-[#FDF1DE] border-[1px] border-[#CF9A29] rounded-3xl leading-7 gap-5">
+										<h2 className="text-2xl font-bold ">{apple.name}</h2>
+										<p>
+											A beautiful bright red apple that is very crisp and flavorful. It has a rich tart flavor and
+											pinkish flesh that is great for snacking and a favorite apple for baking pies or making sauce.
+										</p>
+									</div>
 								</SwiperSlide>
 							))}
-
-							<div className="mt-5 w-full h-2 bg-[#CF9A29] rounded-full overflow-hidden absolute bottom-0">
-								<div
-									className="h-full bg-[#B42E02] transition-all duration-200"
-									style={{ width: `${progress}%` }}></div>
-							</div>
 						</Swiper>
+						<div className="mt-15 w-[90%] h-2 bg-[#CF9A29] rounded-full overflow-hidden mx-auto ">
+							<div className="h-full bg-[#B42E02] transition-all duration-200" style={{ width: `${progress}%` }}></div>
+						</div>
+						<div className="flex flex-col justify-center items-center gap-5 p-5 lg:flex-row lg:justify-around lg:py-10">
+							<a
+								href=""
+								className="bg-[#B42E02] py-3 px-6 rounded-full font-medium text-[#FDF1DE] uppercase md:text-xl text-nowrap">
+								apple alerts
+							</a>
+							<p className="text-center font-medium px-5 md:text-lg">
+								<i>sign up </i>
+								to be notified when your favorite apples & attractions become available
+							</p>
+							<a
+								href=""
+								className="bg-[#16472D] py-3 px-6 rounded-full font-medium text-[#FDF1DE] uppercase md:text-xl text-nowrap">
+								view all
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
