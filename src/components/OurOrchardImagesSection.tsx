@@ -57,6 +57,7 @@ export default function OurOrchardImagesSection() {
 				</div>
 			))}
 			<div className="absolute bg-[#CF9A29] h-[80%] w-2 top-64"></div>
+			<div className="mt-24"></div>
 		</div>
 	)
 }
